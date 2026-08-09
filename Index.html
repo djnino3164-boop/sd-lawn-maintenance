@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S&D Lawn Maintenance | Stockton, CA</title>
+  <meta name="description" content="S&D Lawn Maintenance provides professional lawn mowing, trimming, yard cleanup, landscaping, and light junk removal in Stockton, California and surrounding areas.">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #172018;
+      background: #f7f8f5;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    .container {
+      width: min(1100px, 92%);
+      margin: auto;
+    }
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #e5e7e3;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .nav {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .logo {
+      font-size: 1.25rem;
+      font-weight: 800;
+      letter-spacing: .5px;
+    }
+    .logo span {
+      display: block;
+      font-size: .72rem;
+      font-weight: 500;
+      color: #687268;
+      letter-spacing: 1.5px;
+      margin-top: -3px;
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      font-size: .95rem;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: #3f7045;
+    }
+    .quote-btn {
+      background: #315b38;
+      color: white;
+      padding: 11px 17px;
+      border-radius: 7px;
+      font-weight: 700;
+    }
+    .quote-btn:hover {
+      background: #26492d;
+    }
+    .hero {
+      padding: 105px 0 90px;
+      background:
+        linear-gradient(rgba(247,248,245,.92), rgba(247,248,245,.92)),
+        url("images/hero.jpg") center/cover;
+    }
+    .eyebrow {
+      color: #527158;
+      font-size: .82rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+      margin-bottom: 14px;
+    }
+    h1 {
+      max-width: 760px;
+      font-size: clamp(3rem, 8vw, 6rem);
+      line-height: .95;
+      letter-spacing: -4px;
+      margin-bottom: 25px;
+    }
+    .hero p {
+      max-width: 680px;
+      font-size: 1.12rem;
+      color: #586158;
+      margin-bottom: 30px;
+    }
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .button {
+      display: inline-block;
+      padding: 14px 20px;
+      border-radius: 7px;
+      font-weight: 800;
+    }
+    .primary {
+      background: #315b38;
+      color: white;
+    }
+    .secondary {
+      background: white;
+      border: 1px solid #d8ddd7;
+    }
+    section {
+      padding: 85px 0;
+    }
+    .section-label {
+      color: #527158;
+      font-size: .78rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-size: clamp(2rem, 5vw, 3.3rem);
+      line-height: 1.05;
+      letter-spacing: -1.5px;
+      margin-bottom: 16px;
+    }
+    .section-intro {
+      color: #626b63;
+      max-width: 650px;
+      margin-bottom: 42px;
+    }
+    .services {
+      background: #ffffff;
+    }
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 18px;
+    }
+    .service {
+      padding: 28px 22px;
+      border: 1px solid #e2e6e1;
+      border-radius: 10px;
+      background: #fbfcfa;
+    }
+    .icon {
+      font-size: 1.5rem;
+      margin-bottom: 18px;
+    }
+    .service h3 {
+      margin-bottom: 9px;
+      font-size: 1.08rem;
+    }
+    .service p {
+      color: #687168;
+      font-size: .92rem;
+    }
+    .work {
+      background: #f0f3ee;
+    }
+    .work-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+    .work-card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid #dfe4de;
+    }
+    .work-card img {
+      width: 100%;
+      height: 360px;
+      object-fit: cover;
+      display: block;
+    }
+    .work-card h3 {
+      padding: 17px 20px;
+      font-size: .88rem;
+      letter-spacing: 1px;
+    }
+    .about {
+      background: white;
+    }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 60px;
+      align-items: start;
+    }
+    .about-text p {
+      color: #626b63;
+      font-size: 1.05rem;
+    }
+    .contact-box {
+      background: #315b38;
+      color: white;
+      padding: 34px;
+      border-radius: 12px;
+    }
+    .contact-box h3 {
+      font-size: 1.5rem;
+      margin-bottom: 22px;
+    }
+    .contact-item {
+      padding: 14px 0;
+      border-top: 1px solid rgba(255,255,255,.2);
+    }
+    .contact-item small {
+      display: block;
+      opacity: .7;
+      margin-bottom: 3px;
+    }
+    .contact-item a {
+      font-size: 1.05rem;
+      font-weight: 700;
+    }
+    .cta {
+      background: #172018;
+      color: white;
+      text-align: center;
+    }
+    .cta p {
+      color: #cbd2cc;
+      margin-bottom: 25px;
+    }
+    footer {
+      background: #101510;
+      color: #aeb6ae;
+      padding: 25px 0;
+      font-size: .85rem;
+    }
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    @media (max-width: 900px) {
+      .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    @media (max-width: 650px) {
+      nav a:not(.quote-btn) {
+        display: none;
+      }
+      h1 {
+        letter-spacing: -2px;
+      }
+      .hero {
+        padding: 75px 0 65px;
+      }
+      section {
+        padding: 65px 0;
+      }
+      .service-grid,
+      .work-grid {
+        grid-template-columns: 1fr;
+      }
+      .work-card img {
+        height: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a href="#" class="logo">
+      S&D LAWN MAINTENANCE
+      <span>STOCKTON, CALIFORNIA</span>
+    </a>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#work">Our Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="tel:2095701024" class="quote-btn">Call for a Quote</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="hero">
+  <div class="container">
+    <div class="eyebrow">STOCKTON, CALIFORNIA & SURROUNDING AREAS</div>
+    <h1>Clean yards.<br>Sharp results.</h1>
+    <p>
+      S&D Lawn Maintenance helps homeowners keep their outdoor spaces looking
+      clean, fresh, and cared for—from routine mowing to full yard cleanups
+      and landscaping.
+    </p>
+    <div class="buttons">
+      <a href="tel:2095701024" class="button primary">Call 209-570-1024</a>
+      <a href="#work" class="button secondary">See Our Work</a>
+    </div>
+  </div>
+</section>
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-label">WHAT WE DO</div>
+    <h2>Professional outdoor care,<br>without the hassle.</h2>
+    <p class="section-intro">
+      From regular lawn maintenance to bigger cleanup projects, we help make
+      your property look its best.
+    </p>
+    <div class="service-grid">
+      <div class="service">
+        <div class="icon">✦</div>
+        <h3>Lawn Mowing</h3>
+        <p>Clean, consistent mowing to keep your lawn looking neat and maintained.</p>
+      </div>
+      <div class="service">
+        <div class="icon">✂</div>
+        <h3>Trimming</h3>
+        <p>Detail work around edges and overgrown areas for a cleaner finish.</p>
+      </div>
+      <div class="service">
+        <div class="icon">✚</div>
+        <h3>Yard Cleanup</h3>
+        <p>Clear out overgrowth, weeds, leaves, and general yard mess.</p>
+      </div>
+      <div class="service">
+        <div class="icon">⌂</div>
+        <h3>Landscaping</h3>
+        <p>Improve your outdoor space with practical landscaping and cleanups.</p>
+      </div>
+      <div class="service">
+        <div class="icon">↗</div>
+        <h3>Light Junk Removal</h3>
+        <p>We can also help clear away smaller amounts of unwanted yard or property debris.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="work" id="work">
+  <div class="container">
+    <div class="section-label">OUR WORK</div>
+    <h2>Real work. Real results.</h2>
+    <p class="section-intro">
+      Here are a few examples of properties we've worked on in the Stockton area.
+    </p>
+    <div class="work-grid">
+      <div class="work-card">
+        <img src="images/before.jpg" alt="Before yard cleanup by S&D Lawn Maintenance">
+        <h3>BEFORE — YARD CLEANUP</h3>
+      </div>
+      <div class="work-card">
+        <img src="images/after.jpg" alt="After yard cleanup by S&D Lawn Maintenance">
+        <h3>AFTER — YARD CLEANUP</h3>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="about" id="about">
+  <div class="container about-grid">
+    <div class="about-text">
+      <div class="section-label">S&D LAWN MAINTENANCE</div>
+      <h2>We keep your lawn at its best.</h2>
+      <p>
+        Serving Stockton, California and surrounding areas with straightforward
+        lawn and yard services. Whether you need regular mowing or a yard
+        brought back under control, reach out and let's talk about your project.
+      </p>
+    </div>
+    <div class="contact-box" id="contact">
+      <h3>Contact S&D</h3>
+      <div class="contact-item">
+        <small>Service Area</small>
+        Stockton, CA + surrounding areas
+      </div>
+      <div class="contact-item">
+        <small>Call or text</small>
+        <a href="tel:2095701024">209-570-1024</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="cta">
+  <div class="container">
+    <div class="section-label">READY TO GET STARTED?</div>
+    <h2>Ready for a cleaner yard?</h2>
+    <p>Call S&D Lawn Maintenance for a quote.</p>
+    <a href="tel:2095701024" class="button primary">
+      Call 209-570-1024
+    </a>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="container footer-content">
+    <div>© 2026 S&D Lawn Maintenance</div>
+    <div>Stockton, California & surrounding areas · 209-570-1024</div>
+  </div>
+</footer>
+</body>
+</html>
